@@ -9,8 +9,86 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
-<body>
-	<!-- your single-location forecast interface here -->
+<body style = "background-color: powderblue;">
+<style>
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+</style>
+  
+<style>
+.horizontal-scroll-wrapper {
+  width: 300px;
+  height: 1200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transform:rotate(-90deg) translateX(140px);
+}
+  </style>
+  <style>
+.horizontal-scroll-wrapper > div {
+  width: 150px;
+  height: 120px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+  </style>
+  <style> h2 { text-align: center}</style>
+  <style>h3 {color: black; font-size: 50px;}</style>
+  
+<button onclick="home()">Home</button>
+ <script>
+  function home() {
+  location.replace("http://project-1-starter-code-collinneale-collinneale169479.codeanyapp.com:8000/weather/")
+}
+</script>
+  <p style= "color: green;text-align: center; font-size: 100px;"> Berkeley, CA </p>
+  <hr>
+   <h2> 
+   <p style="font-size:20px">Time: 5:02 AM</p>
+<div class="horizontal-scroll-wrapper">
+  <div>  </div>
+  <div> <figcaption>55&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"> <figcaption>12 AM</figcaption> </div> 
+  <div> <figcaption>57&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>1 AM</figcaption></div>
+  <div> <figcaption>57&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"> <figcaption>2 AM</figcaption></div>
+  <div> <figcaption>59&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>3 AM</figcaption></div>
+  <div> <figcaption>59&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>4 AM</figcaption></div>
+  <div> <figcaption>60&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>5 AM</figcaption></div>
+  <div> <figcaption>60&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>6 AM</figcaption></div>
+  <div> <figcaption>61&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>7 AM</figcaption></div>
+  <div> <figcaption>61&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>8 AM</figcaption></div>
+  <div> <figcaption>66&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>9 AM</figcaption></div>
+  <div> <figcaption>69&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>10 AM</figcaption></div>
+  <div> <figcaption>72&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>11 AM</figcaption></div>
+  <div> <figcaption>74&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>12 PM</figcaption></div>
+  <div> <figcaption>76&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"> <figcaption>1 PM</figcaption></div>
+  <div> <figcaption>76&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>2 PM</figcaption></div>
+  <div> <figcaption>76&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>3 PM</figcaption></div>
+  <div> <figcaption>75&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>4 PM</figcaption></div>
+  <div> <figcaption>72&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>5 PM</figcaption></div>
+  <div> <figcaption>71&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>6 PM</figcaption></div>
+  <div> <figcaption>71&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>7 PM</figcaption></div>
+  <div> <figcaption>68&#176</figcaption> <img src="/static/sun.jpg" alt="Trulli" style="width:50px;height:50px;"><figcaption>8 PM</figcaption></div>
+  <div> <figcaption>63&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>9 PM</figcaption></div>
+  <div> <figcaption>59&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>10 PM</figcaption> </div>
+  <div> <figcaption>55&#176</figcaption> <img src="/static/moon.png" style="width:50px;height:50px;"><figcaption>11 PM</figcaption></div>
+</div>
+  </h2>
+
+  
+ <div style="clear: both">
+  <h3 style="position: absolute; left: 100px; top:530px;"> Sunset:<br><br>Chance of rain:<br><br> Wind:<br><br>Visibility:</h3>
+  <h3 style= "position: absolute;right: 100px; top: 530px; text-align: left;">8:39 PM<br><br>5%<br><br>WSW 9 mph<br><br>11 mph</h3>
+</div>
+
 </body>
 </html>
 
